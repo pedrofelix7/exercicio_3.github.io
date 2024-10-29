@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:valid{
+    border-color: green;
+}
+
+input:invalid::after{
+    content: 'X';
+    color: red;
+    margin-left: 5px;
+}
+
+input:valid::after{
+    content: '✓';
+    color: green;
+    margin-left: 5px;
+}
+
+#name{
+    background-color: #ccc;
+}
+
+#email{
+    background-color: #ccc;
+}
+
+#cpf{
+    background-color: #ccc;
+}
+
+#age{
+    background-color: #ccc;
+}
+
+#telefone{
+    background-color: #ccc;
+}
+
+.navbar ul li{
+    font-size: 18px;
+    line-height: 1.6;
+    display: inline;
+}
+
+h2 + p{
+    margin-top: 10px;
+    color: purple;
+}
+
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    color: green;
+    text-decoration: underline;
+}
+
+a:active{
+    color: orange;
+}
+
+form:has(input:invalid){
+    border: 2px solid red;
+}
+
+form:has(input:valid) {
+    border: 2px solid green;
+}
+
+:is(h1, h2, h3) {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+p:first-child {
+    font-weight: bold;
+    color: blue;
+}
+
+
+p:first-of-type {
+    font-size: 1.2em;
+    color: green;
+}
